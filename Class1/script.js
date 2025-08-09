@@ -121,3 +121,61 @@
 
 
 
+// alert("something is wrong");
+// console.warn("this is warning");
+// console.error("this is error");
+// let first_name = prompt("enter your name");
+// console.log(first_name);
+
+
+
+// let num  = prompt("Enter the number: ");
+// if (num%10==0){
+//     console.log("it is good number: ")
+// }else {
+//     console.log("it is not good")
+// }
+
+
+// let userName = prompt("enter your name: ");
+// let age = prompt("enter your age: ");
+// console.log(`name is ${userName} and  its  age is ${age} years old`);
+
+
+// let quarter = 4;
+// switch(quarter){
+//     case 1:
+//         console.log("January,February,March");
+//         break;
+//     case 2:
+//         console.log("April,May,June");
+//         break;
+//     case 3:
+//         console.log("July, August, September");
+//         break;
+//     case 4:
+//         console.log("October, November, December");
+//         break;
+//     default:
+//         console.log("Invalid Case:")
+// }
+
+
+
+
+let num1 = prompt("enter the first number");
+let num2 = prompt("enter the second number");
+let num3 = prompt("enter the third number");
+if (num1 >= num2){
+    if (num1 >= num3){
+        console.log("mum1 is greatest");
+    }else {
+        console.log("num3 is greatest");
+    }
+}else if(num2 >= num3){
+    console.log("num2 is greatest");
+}else{
+    console.log("num3 is greatest");
+}
+
+
