@@ -88,3 +88,57 @@
 
 
 
+// let fruits = ["mango","apple","banana","litchi","orange"];
+// for (let i = 0;i<fruits.length;i++){
+//     console.log(i,fruits[i]);
+// }
+
+
+
+// let heroes = [
+//     ["ironman","spiderman","thor"],["superman","batman","flash"]
+// ];
+// for (let i=0;i<heroes.length;i++){
+//     console.log(`list #${i}`);
+//     for (let j=0; j<heroes[i].length0;j++){
+//         console.log(heroes[i][j]);
+//     }
+// }
+
+
+
+
+// for of loop: he for...of loop is used to iterate over iterable objects like arrays, strings, maps, sets, etc.It gives you the values directly, not the indexes
+// let fruits = ["Apple","Banana","Mango"];
+// for (fruit of fruits) {
+//     console.log(fruit);
+// }
+
+
+// for (char of "apnacollge"){
+//     console.log(char);
+// }
+
+
+
+// let heroes = [
+//     ["ironman","spiderman","thor"],["superman","batman","flash"]
+// ];
+// for (list of heroes){
+//     console.log(list)
+// }
+
+
+
+// let heroes = [
+//     ["ironman","spiderman","thor"],["superman","batman","flash"]
+// ];
+// for (list of heroes){
+//     for (name_hero of list){
+//         console.log(name_hero);
+//     }
+// }
+
+
+
+
