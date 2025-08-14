@@ -129,6 +129,22 @@
 // let random = Math.floor(Math.random() * 10)+1;
 // console.log(random);
 
+//random number between 1 to 100
+// let random = Math.floor(Math.random() * 100)+1;
+// console.log(random);
+
+
+
+// random number between 1 to 5
+// let random = Math.floor(Math.random() * 5)+1;
+// console.log(random);
+
+
+// random number between 21 to 25
+// let random = Math.floor(Math.random() * 5)+21;
+// console.log(random);
+
+
 
 
 
