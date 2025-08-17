@@ -121,12 +121,12 @@
 
 
 
-let heroes = [
-    ["ironman","spiderman","thor"],["superman","batman","flash"]
-];
-for (list of heroes){
-    console.log(list)
-}
+// let heroes = [
+//     ["ironman","spiderman","thor"],["superman","batman","flash"]
+// ];
+// for (list of heroes){
+//     console.log(list)
+// }
 
 
 
