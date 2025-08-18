@@ -24,3 +24,35 @@
 // console.dir(document.querySelectorAll('p'));
 // console.log(document.querySelector('h1').innerText);
 // console.dir(document.querySelectorAll("div a"));
+
+
+
+// console.log(document.querySelector('p').innerText);
+// console.log(document.querySelector('p').textContent);
+// console.log(document.querySelector('p').innerHTML);
+
+
+
+
+
+
+// obj.getAttribute(attr):- Used to get (read) the value of an attribute.    
+// obj.setAttribute(attr,val):- Used to set (change) the value of an attribute.
+
+
+
+// let links = document.querySelectorAll(".box a");
+// for(let i=0;i<links.length;i++){
+//     links[i].style.color = "green"
+// }
+
+
+// let links = document.querySelectorAll(".box a");
+// for(link of links){
+//     link.style.color = "yellow"
+// }
+
+
+
+
+
