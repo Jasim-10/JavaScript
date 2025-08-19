@@ -75,4 +75,47 @@
 // })
 
 
+// let btn1 =document.querySelector('#btn1');
+// let btn2 =document.querySelector('#btn2');
+// btn1.addEventListener("click", sayHello);
+// btn2.addEventListener("click", sayHello);
 
+// function sayHello() {
+//   console.log(this);          // refers to the button that was clicked
+//   console.log(this.innerText); // prints text of that button
+// }
+
+
+// let btn1 =document.querySelector('#btn1');
+// btn1.addEventListener("click",function (){
+//     console.log(this);
+//     this.style.backgroundColor = "red";
+// })
+
+
+
+
+// let btn = document.querySelector("button");
+// btn.addEventListener("dblclick",function(event){
+//     console.log(event);
+//     console.log("Button clicked");
+// });
+
+
+// let btn = document.querySelector("button");
+// btn.addEventListener("click",function(event){
+//     console.log(event);
+//     console.log("Button clicked");
+// });
+
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("keydown",function(){
+//     console.log('key was pressed');
+// })
+
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("keyup",function(){
+//     console.log('key was released');
+// })
