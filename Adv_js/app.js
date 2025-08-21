@@ -180,6 +180,10 @@
 // function changeColor(color,delay){
 //     return new Promise ((resolve,reject)=>{
 //         setTimeout(()=>{
+//             let num = Math.floor(Math.random()*10)+1;
+//             if(num>7){
+//                 reject("promises rejected");
+//             }
 //             h1.style.color = color;
 //             console.log(color);
 //             resolve("color chnage");
@@ -188,32 +192,68 @@
 // }
 
 // async function show(){
-//     await changeColor("violet",1000);
-//     await changeColor("indigo",1000);
-//     await changeColor("blue",1000);
-//     await changeColor("green",1000);
-//     await changeColor("yellow",1000);
-//     await changeColor("orange",1000);
-//     await changeColor("red",1000);
+//     try{
+//         await changeColor("violet",1000);
+//         await changeColor("indigo",1000);
+//         await changeColor("blue",1000);
+//         await changeColor("red",1000);
+//     } catch(err){
+//         console.log("error caught", err);
+//     }
+//     let a = 5;
+//     console.log(5);
+//     console.log("new number = ",a+3);
 // }
 // show()
 
 
 
-function table(num, i, delay) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log(`${num} * ${i} = ${num * i}`);
-      resolve();
-    }, delay);
-  });
-}
+// function table(num, i, delay) {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log(`${num} * ${i} = ${num * i}`);
+//       resolve();
+//     }, delay);
+//   });
+// }
 
-async function showTable() {
-  let num = prompt("enter the number");
-  for (let i = 1; i <= 10; i++) {
-    await table(num, i, 1000);
-  }
-}
+// async function showTable() {
+//   let num = prompt("enter the number");
+//   for (let i = 1; i <= 10; i++) {
+//     await table(num, i, 1000);
+//   }
+// }
 
-showTable();
+// showTable();
+
+
+
+// let jsonRes = '{"fact":"A female cat will be pregnant for approximately 9 weeks or between 62 and 65 days from conception to delivery.","length":110}'
+
+// let validRes = JSON.parse(jsonRes);
+// console.log(validRes.fact);
+
+
+// let student = {
+//     name:"jasim",
+//     age:23,
+//     marks:7.87
+// };
+// console.log(JSON.stringify(student))
+
+
+
+
+
+
+//Our First Api request using fetch
+let url = "https://catfact.ninja/fact";
+
+fetch(url)
+.then((res)=>{
+    console.log(res);
+})
+.catch((err)=>{
+    console.log("Error ",err)
+})
+
