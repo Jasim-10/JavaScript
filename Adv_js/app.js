@@ -1,4 +1,4 @@
-let h1 = document.querySelector("h1");
+// let h1 = document.querySelector("h1");
 
 // setTimeout(()=>{
 //     h1.style.color = "red";
@@ -117,3 +117,40 @@ let h1 = document.querySelector("h1");
 //     console.log("result: ", error);
 //     console.log("promise was reject");
 // })
+
+
+
+
+// let h1 = document.querySelector("h1");
+// function changeColor(color,delay){
+//     return new Promise ((resolve,reject)=>{
+//         setTimeout(()=>{
+//             h1.style.color = color;
+//             resolve("color chnaged");
+//         },delay);
+//     });
+// }
+
+// changeColor("red",2000)
+// .then(()=>{
+//     console.log("red color was completed");
+//     return changeColor("orange",2000)
+// })
+// .then(()=>{
+//     console.log("orange color was completed");
+//     return changeColor("green",2000)
+// })
+// .then(()=>{
+//     console.log("green color was complete");
+//     return changeColor("yellow",2000);
+// })
+// .then(()=>{
+//     console.log("yellow was completed");
+//     return changeColor("blue",1000);
+// })
+// .then(()=>{
+//     console.log("blue was completed");
+// })
+// .catch(()=>{
+//     console.log("error");
+// });
