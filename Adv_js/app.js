@@ -69,4 +69,11 @@ function savetoDb(data,success,failure){
         }
     });
 }
-// savetoDb("Apna college");
+savetoDb("Apna college")
+.then(()=>{
+    console.log("promise was resolved");
+})
+.catch(()=>{
+    console.log("promise was reject");
+})
+
