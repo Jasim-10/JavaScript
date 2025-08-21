@@ -154,3 +154,66 @@
 // .catch(()=>{
 //     console.log("error");
 // });
+
+
+
+// async function greet(){
+//     throw "404 page not found";
+//     return "Hello World";
+// }
+// greet()
+// .then((result)=>{
+//     console.log("promise was resolved with result: ",result);
+// })
+// .catch((err)=>{
+//     console.log("promise was rejected with err: ", err);
+// })
+
+// let demo = async () =>{
+//     return 5;
+// }
+
+
+
+
+// let h1 = document.querySelector("h1");
+// function changeColor(color,delay){
+//     return new Promise ((resolve,reject)=>{
+//         setTimeout(()=>{
+//             h1.style.color = color;
+//             console.log(color);
+//             resolve("color chnage");
+//         },delay);
+//     });
+// }
+
+// async function show(){
+//     await changeColor("violet",1000);
+//     await changeColor("indigo",1000);
+//     await changeColor("blue",1000);
+//     await changeColor("green",1000);
+//     await changeColor("yellow",1000);
+//     await changeColor("orange",1000);
+//     await changeColor("red",1000);
+// }
+// show()
+
+
+
+function table(num, i, delay) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(`${num} * ${i} = ${num * i}`);
+      resolve();
+    }, delay);
+  });
+}
+
+async function showTable() {
+  let num = prompt("enter the number");
+  for (let i = 1; i <= 10; i++) {
+    await table(num, i, 1000);
+  }
+}
+
+showTable();
