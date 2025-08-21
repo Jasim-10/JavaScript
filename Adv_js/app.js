@@ -59,21 +59,61 @@ let h1 = document.querySelector("h1");
 
 
 
-function savetoDb(data,success,failure){
-    return new Promise((resolve,reject)=>{
-        let internetSpeed = Math.floor(Math.random()*10)+1;
-        if (internetSpeed > 4){
-            resolve("success: data was saved");
-        } else {
-            reject("failure: weak connection");
-        }
-    });
-}
-savetoDb("Apna college")
-.then(()=>{
-    console.log("promise was resolved");
-})
-.catch(()=>{
-    console.log("promise was reject");
-})
+// function savetoDb(data,success,failure){
+//     return new Promise((resolve,reject)=>{
+//         let internetSpeed = Math.floor(Math.random()*10)+1;
+//         if (internetSpeed > 4){
+//             resolve("success: data was saved");
+//         } else {
+//             reject("failure: weak connection");
+//         }
+//     });
+// }
+// savetoDb("Apna college")
+// .then(()=>{
+//     console.log("data 1 was saved");
+//     return savetoDb("hello world");
+// })
+// .then(()=>{
+//     console.log("data 2 was saved");
+//     return savetoDb("jasim")
+// })
+// .then(()=>{
+//     console.log("data 3 was saved");
+// })
+// .catch(()=>{
+//     console.log("promise was reject");
+// })
 
+
+
+
+// function savetoDb(data,success,failure){
+//     return new Promise((resolve,reject)=>{
+//         let internetSpeed = Math.floor(Math.random()*10)+1;
+//         if (internetSpeed > 4){
+//             resolve("success: data was saved");
+//         } else {
+//             reject("failure: weak connection");
+//         }
+//     });
+// }
+// savetoDb("Apna college")
+// .then((result)=>{
+//     console.log("result1: ", result);
+//     console.log("data 1 was saved");
+//     return savetoDb("hello world");
+// })
+// .then((result)=>{
+//     console.log("result2: ", result);
+//     console.log("data 2 was saved");
+//     return savetoDb("jasim")
+// })
+// .then((result)=>{
+//     console.log("result3: ",result);
+//     console.log("data 3 was saved");
+// })
+// .catch((error)=>{
+//     console.log("result: ", error);
+//     console.log("promise was reject");
+// })
