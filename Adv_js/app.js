@@ -247,13 +247,135 @@
 
 
 //Our First Api request using fetch
-let url = "https://catfact.ninja/fact";
+// let url = "https://catfact.ninja/fact";
 
-fetch(url)
-.then((res)=>{
-    console.log(res);
-})
-.catch((err)=>{
-    console.log("Error ",err)
-})
+// fetch(url)
+// .then((res)=>{
+//     console.log(res);
+//     res.json().then((data)=>{
+//         console.log(data);
+//     });
+// })
+// .catch((err)=>{
+//     console.log("Error ",err)
+// })
+
+
+
+// let url = "https://catfact.ninja/fact";
+// fetch(url)
+// .then((res)=>{
+//     return res.json();
+// })
+// .then((data)=>{
+//     console.log("data1 = ",data.fact);
+//     return fetch(url);
+// })
+// .then((res)=>{
+//     return res.json();
+// })
+// .then((data2)=>{
+//     console.log("data2 = ",data2.fact);
+// })
+// .catch((err)=>{
+//     console.log("Error ",err);
+// })
+
+
+
+
+
+
+// using fetch with async/wait
+// let url = "https://catfact.ninja/fact";
+
+// async function getFacts(){
+//     try {
+//         let res = await fetch(url);
+//         let data = await res.json();
+//         console.log(data.fact);
+
+
+
+//         let res2 = await fetch(url);
+//         let data2 = await res2.json();
+//         console.log(data2.fact);
+//     }
+    
+//     catch (e){
+//         console.log("error - ",e);
+//     }
+// }
+// getFacts()
+
+
+
+
+//Axios
+// let btn = document.querySelector("button");
+// let p = document.querySelector("p");
+
+
+// btn.addEventListener("click",async ()=>{
+//     let fact = await getFacts();
+//     let p = document.querySelector("#result");
+//     p.innerText = fact;
+// })
+
+
+
+// let url = "https://catfact.ninja/fact";
+
+// async function getFacts(){
+//     try{
+//         let res = await axios.get(url);
+//         return res.data.fact;
+//     } catch (e){
+//         console.log("error ",e);
+//         return "No fact Found";
+//     }
+// }
+// getFacts()
+
+
+
+
+let url = "https://dog.ceo/api/breeds/image/random";
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", async () =>{
+    let link = await getImage();
+    let img = document.querySelector("#result");
+    img.setAttribute("src",link)
+    console.log(link);
+});
+
+async function getImage(){
+    try{
+        let res = await axios.get(url);
+        return res.data.message;
+    }catch (e){
+        console.log("error ",e)
+        return "/"
+    }
+}
+
+
+
+
+// const url = "https://icanhazdadjoke.com/";
+
+// async function getJokes(){
+//     try {
+//         const config = { headers:{Accept: "application/json"}};
+//         let res = await axios.get(url,config)
+//         console.log(res.data.joke);
+//     }catch (e){
+//         console.log(e);
+//     }
+// }
+// getJokes();
+
+
+
 
